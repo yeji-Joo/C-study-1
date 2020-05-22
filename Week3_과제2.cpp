@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-void swap(int *a, int *b) // ¹İÈ¯ÇüÀº voidÇü, ÇÔ¼ö ÀÌ¸§Àº swap, ¸Å°³º¯¼ö´Â µÎ °³ÀÇ Á¤¼ö
+void swap(int *a, int *b) // ë°˜í™˜í˜•ì€ voidí˜•, í•¨ìˆ˜ ì´ë¦„ì€ swap, ë§¤ê°œë³€ìˆ˜ëŠ” ë‘ ê°œì˜ ì •ìˆ˜
 {
-	int temp; // ¼ıÀÚ ±³È¯À» À§ÇØ intÇü º¯¼ö ÇÏ³ª ´õ ¼±¾ğ
+	int temp; // ìˆ«ì êµí™˜ì„ ìœ„í•´ intí˜• ë³€ìˆ˜ í•˜ë‚˜ ë” ì„ ì–¸
 	temp = *a;
 	*a = *b;
 	*b = temp;
@@ -11,14 +11,14 @@ void swap(int *a, int *b) // ¹İÈ¯ÇüÀº voidÇü, ÇÔ¼ö ÀÌ¸§Àº swap, ¸Å°³º¯¼ö´Â µÎ °³
 
 int main()
 {
-	int num1, num2; // ÀÔ·Â¹ŞÀ» µÎ °³ÀÇ º¯¼ö ¼±¾ğ
+	int num1, num2; // ì…ë ¥ë°›ì„ ë‘ ê°œì˜ ë³€ìˆ˜ ì„ ì–¸
 	cout << "first number >> ";
 	cin >> num1;
 	cout << "second number >> ";
 	cin >> num2;
 
 	cout << endl;
-	cout << "swap Àü >> " << num1 << " " << num2 << endl;
-	swap(&num1, &num2);
-	cout << "swap ÈÄ >> " << num1 << " " << num2 << endl;
+	cout << "swap ì „ >> " << num1 << " " << num2 << endl;
+	swap(&num1, &num2); // swap í•¨ìˆ˜ 
+	cout << "swap í›„ >> " << num1 << " " << num2 << endl;
 }
