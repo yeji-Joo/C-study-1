@@ -1,7 +1,8 @@
+// QUIZ 3
 #include <iostream>
 using namespace std;
 
-int max(int a, int b) // ÀÔ·ÂµÈ µÎ ¼ö¸¦ ºñ±³ÇØ¼­ Å« °ª ¸®ÅÏ
+int max(int a, int b) // ì…ë ¥ëœ ë‘ ìˆ˜ë¥¼ ë¹„êµí•´ì„œ í° ê°’ ë¦¬í„´
 {
 	if (a > b)
 		return a;
@@ -9,7 +10,7 @@ int max(int a, int b) // ÀÔ·ÂµÈ µÎ ¼ö¸¦ ºñ±³ÇØ¼­ Å« °ª ¸®ÅÏ
 		return b;
 }
 
-int min(int a, int b) // ÀÔ·ÂµÈ µÎ ¼ö¸¦ ºñ±³ÇØ¼­ ÀÛÀº °ª ¸®ÅÏ
+int min(int a, int b) // ì…ë ¥ëœ ë‘ ìˆ˜ë¥¼ ë¹„êµí•´ì„œ ì‘ì€ ê°’ ë¦¬í„´
 {
 	if (a > b)
 		return b;
@@ -20,9 +21,9 @@ int min(int a, int b) // ÀÔ·ÂµÈ µÎ ¼ö¸¦ ºñ±³ÇØ¼­ ÀÛÀº °ª ¸®ÅÏ
 int main()
 {
 	int num1, num2;
-	cout << "µÎ ¼ö¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä (¶ç¾î¾²±â·Î ±¸ºĞ) >> ";
+	cout << "ë‘ ìˆ˜ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš” (ë„ì–´ì“°ê¸°ë¡œ êµ¬ë¶„) >> ";
 	cin >> num1 >> num2;
 	cout << endl << endl;
-	cout << "Å« ¼ö >> " << max(num1, num2) << endl;
-	cout << "ÀÛÀº ¼ö >> " << min(num1, num2) << endl;
+	cout << "í° ìˆ˜ >> " << max(num1, num2) << endl;
+	cout << "ì‘ì€ ìˆ˜ >> " << min(num1, num2) << endl;
 }
